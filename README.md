@@ -28,4 +28,22 @@ Designing Data-Intensive Applidations
 
 ## OLAP and OLDP
 - Online analytical processing (OLAP) is a system for performing multi-dimensional analysis at high speeds on large volumes of data.
+    - for user
 - Online transactional processing (OLTP) enables the real-time execution of large numbers of database transactions by large numbers of people, typically over the Internet.
+    - for analyzer
+
+## Encoding and Evolution
+- Backward compatibility
+- Forward compatibility
+
+- binary encoding
+    - Programming language–specific encoding
+    - Textual encoding
+        -  JSON, XML, and CSV
+    - Binary schema–driven
+        - Thrift, Protocol Buffers, and Avro
+
+- dataflow
+    - database
+    - RPC and REST APIs
+    - Asynchronous message passing
