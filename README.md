@@ -72,3 +72,12 @@
 
       1. Vr + Vw > V
       2. Vw > V/2
+
+## Partitioning and Secondary Indexes
+
+- The situation becomes more complicated if secondary indexes are involved
+- Secondary indexes are common in both relational and document DBs, and is the most important part of search servers (Solr, Elasticsearch)
+- Main problem: secondary indexes don't map neatly to partitions
+- Two main approaches
+  - document-based partitioning
+  - term-based partitioning
