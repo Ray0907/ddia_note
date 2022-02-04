@@ -79,5 +79,37 @@
 - Secondary indexes are common in both relational and document DBs, and is the most important part of search servers (Solr, Elasticsearch)
 - Main problem: secondary indexes don't map neatly to partitions
 - Two main approaches
+
   - document-based partitioning
   - term-based partitioning
+
+- ACID Definition
+
+  - Atomicity
+  - Consistency
+  - Isolation
+  - Durability
+
+- Read phenomena
+  - Dirty reads
+    - A dirty read (aka uncommitted dependency) occurs when a transaction is allowed to read data from a row that has been modified by another running transaction and not yet committed.
+  - Non-repeatable reads
+    - A non-repeatable read occurs when, during the course of a transaction, a row is retrieved twice and the values within the row differ between reads.
+  - Phantom reads
+    - A phantom read occurs when, in the course of a transaction, new rows are added or removed by another transaction to the records being read.
+
+## transaction isolation level
+
+| transaction isolation level | Dirty Read | Unrepeatable Read | Phantom Read |
+| --------------------------- | ---------- | ----------------- | ------------ |
+| Read uncommitted            | YES        | YES               | YES          |
+| Read committed              | NO         | YES               | YES          |
+| Repreatable read            | NO         | NO                | YES          |
+| Serializable                | NO         | NO                | NO           |
+
+- Two-phase locking
+
+  - In databases and transaction processing, two-phase locking (2PL) is a concurrency control method that guarantees serializability.
+
+- Snapshot isolation
+  - In databases, and transaction processing (transaction management), snapshot isolation is a guarantee that all reads made in a transaction will see a consistent snapshot of the database (in practice it reads the last committed values that existed at the time it started), and the transaction itself will successfully commit only if no updates it has made conflict with any concurrent updates made since that snapshot.
