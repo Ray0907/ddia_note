@@ -112,4 +112,15 @@
   - In databases and transaction processing, two-phase locking (2PL) is a concurrency control method that guarantees serializability.
 
 - Snapshot isolation
+
   - In databases, and transaction processing (transaction management), snapshot isolation is a guarantee that all reads made in a transaction will see a consistent snapshot of the database (in practice it reads the last committed values that existed at the time it started), and the transaction itself will successfully commit only if no updates it has made conflict with any concurrent updates made since that snapshot.
+
+- Consensus algorithms
+  - A fundamental problem in distributed computing and multi-agent systems is to achieve overall system reliability in the presence of a number of faulty processes.
+- fencing token(ZooKeeper ID zxid or cversion)
+  - simply a number that increases (e.g. incremented by the lock service) every time a client acquires the lock.
+    - Uniqueness
+    - Monotonic sequence
+    - Availability
+- Byzantine generals problem
+  - a condition of a computer system, particularly distributed computing systems, where components may fail and there is imperfect information on whether a component has failed. The term takes its name from an allegory, the "Byzantine generals problem",[2] developed to describe a situation in which, in order to avoid catastrophic failure of the system, the system's actors must agree on a concerted strategy, but some of these actors are unreliable.
