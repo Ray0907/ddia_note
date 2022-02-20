@@ -135,4 +135,14 @@
   - In transaction processing, databases, and computer networking, the two-phase commit protocol (2PC) is a type of atomic commitment protocol (ACP). It is a distributed algorithm that coordinates all the processes that participate in a distributed atomic transaction on whether to commit or abort (roll back) the transaction.
 
 - Three-phase commit protocol
+
   - In computer networking and databases, the three-phase commit protocol (3PC) is a distributed algorithm which lets all nodes in a distributed system agree to commit a transaction. It is a more failure-resilient refinement of the two-phase commit protocol (2PC).
+
+- Consensus Algorithm
+  - Uniformagreement
+  - Integrity
+  - Validity
+  - Termination
+- batch processing
+  - MapReduce
+    - a framework for processing parallelizable problems across large datasets using a large number of computers (nodes), collectively referred to as a cluster (if all nodes are on the same local network and use similar hardware) or a grid (if the nodes are shared across geographically and administratively distributed systems, and use more heterogeneous hardware). Processing can occur on data stored either in a filesystem (unstructured) or in a database (structured).
