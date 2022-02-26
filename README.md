@@ -144,5 +144,16 @@
   - Validity
   - Termination
 - batch processing
+
   - MapReduce
     - a framework for processing parallelizable problems across large datasets using a large number of computers (nodes), collectively referred to as a cluster (if all nodes are on the same local network and use similar hardware) or a grid (if the nodes are shared across geographically and administratively distributed systems, and use more heterogeneous hardware). Processing can occur on data stored either in a filesystem (unstructured) or in a database (structured).
+
+- Tumbling window
+- Hopping window
+- Sliding window
+- Session window
+
+- stream processes
+  - Stream-stream joins
+  - Stream-table joins
+  - Table-table joins
